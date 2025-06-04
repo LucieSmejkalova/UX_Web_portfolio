@@ -84,7 +84,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: left;
+    text-align: center;
     color: #333;
     padding-bottom: 3rem;
 }
@@ -203,6 +203,5 @@ nav {
     color: black;
     font-size: 1rem;
 }
-
 
 
