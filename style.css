@@ -11,6 +11,12 @@ body {
     background-color: #ffffff;
 }
 
+img, .content-image {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+}
+
 /* Navigation - Mobile First */
 nav {
     position: static;
@@ -156,8 +162,6 @@ nav {
     border-radius: 10px;
     display: block;
     margin: 2rem 0 0 0;
-    margin: 2rem auto 0 auto !important;
-    display: block;
 }
 
   /* Main Content */
