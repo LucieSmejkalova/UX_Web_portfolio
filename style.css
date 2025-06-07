@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+}
+
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
@@ -102,8 +108,10 @@ nav {
 
 .hero-content {
     width: 100%;
+    max-width: 100%;
     padding: 0 1rem;
     position: relative;
+    overflow-x: hidden;
     z-index: 1;
 }
 
@@ -113,7 +121,7 @@ nav {
 }
 
 .hero h1 {
-    font-size: 2rem;
+    font-size: 4rem;
     margin-bottom: 0.5rem;
     font-weight: 700;
     letter-spacing: -1px;
@@ -179,6 +187,14 @@ nav {
     padding: 0 1rem;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 /* Portfolio Section - Hero Style */
 .portfolio-section {
     min-height: 80vh;
@@ -194,11 +210,13 @@ nav {
 
 .portfolio-section .container {
     width: 100%;
+    max-width: 100%; 
     padding: 0 1rem;
     position: relative;
     z-index: 1;
     max-width: 1200px;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 .portfolio-section .section-content {
