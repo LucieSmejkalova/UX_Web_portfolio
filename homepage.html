@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Main Content - Proměnná oblast -->
+  <main class="main-content">
+    <div class="container">
+        <div class="content-area" id="content-area">
+            <!-- HOMEPAGE OBSAH -->
+            <div id="home-section" class="content-section active">
+                <!-- Hero Section -->
+                <section class="hero">
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <h1>Portfolio</h1>
+                            <div class="subtitle">UX/UI designer</div>
+                            <p class="intro-text">Jmenuji se <strong>Lucie Smejkalová</strong> a jsem UX/UI designer. Navrhuji digitální řešení a uživatelská rozhraní, které vycházejí z reálných potřeb lidí.</p>
+                            <a onclick="showSection('portfolio')" class="btn">Zobrazit ukázky prací</a>
+                        </div>
+                        <img src="Img/Frame 2424564.png" alt="foto úvodní banner" class="hero-image">
+                    </div>
+                </section>
+
+                <!-- Portfolio Section -->
+                <section class="portfolio-section">
+                    <div class="section-content">
+                        <div class="content-text">
+                            <h2>Ukázky prací</h2>
+                            <p>Prohlédněte si výběr mých nejlepších projektů, kde řeším skutečné UX výzvy.</p>
+                            <a onclick="showSection('portfolio')" class="btn">Zobrazit ukázky prací</a>
+                        </div>
+                        <img src="Img/Frame 2424564.png" alt="foto úvodní banner" class="hero-image">
+                    </div>
+                </section>
+
+                <!-- Design Process Section -->
+                <section class="process-section">
+                    <div class="section-content">
+                        <div class="content-text">
+                            <h2>Můj design proces</h2>
+                            <p>Strukturovaný přístup od prvotního výzkumu až po finální implementaci.</p>
+                            <a onclick="showSection('process')" class="btn">Zobrazit více</a>
+                        </div>
+                        <img src="Img/Frame 2424564.png" alt="foto úvodní banner" class="hero-image">
+                    </div>
+                </section>
+
+                <!-- Featured Project Section -->
+                <section class="featured-project-section">
+                    <div class="section-content">
+                        <div class="content-text">
+                            <h3>Redesign e-commerce aplikace pro módní retailer</h3>
+                            <p>Uživatelé opouštěli nákupní proces kvůli složité navigaci a nejasným informacím o produktech.</p>
+                            <a href="/projekt-1" class="btn">Zobrazit případovou studii</a>
+                        </div>
+                        <img src="Img/Frame 2424564.png" alt="foto úvodní banner" class="hero-image">
+                    </div>
+                </section>
+
+                <!-- About Section -->
+                <section class="about-section">
+                    <div class="section-content">
+                        <div class="content-text">
+                            <h2>O mně</h2>
+                            <p>UX designerka s více než 5 lety zkušeností v oblasti digitálního designu.</p>
+                            <a onclick="showSection('contact')" class="btn">Pojďme spolupracovat</a>
+                        </div>
+                        <img src="Img/Frame 2424564.png" alt="foto úvodní banner" class="hero-image">
+                    </div>
+                </section>
+
+                <!-- Contact Section -->
+                <section class="contact-section">
+                    <div class="contact-content">
+                        <h2>Kontakt</h2>
+                        <p>Zajímá vás spolupráce? Ráda si s vámi promluvím o vašem projektu.</p>
+                        
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <h3>Email</h3>
+                                <a href="mailto:lucie.smejkalova@email.cz">lucie.smejkalova@email.cz</a>
+                            </div>
+                            <div class="contact-item">
+                                <h3>Telefon</h3>
+                                <a href="tel:+420123456789">+420 123 456 789</a>
+                            </div>
+                            <div class="contact-item">
+                                <h3>LinkedIn</h3>
+                                <a href="https://linkedin.com/in/lucie-smejkalova" target="_blank">linkedin.com/in/lucie-smejkalova</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
