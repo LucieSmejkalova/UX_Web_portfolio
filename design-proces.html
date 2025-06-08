@@ -13,3 +13,641 @@
     <h1>Můj design proces</h1>
 </body>
 </html>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+}
+
+body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        line-height: 1.6;
+        color: black;
+        background-color: #ffffff;
+        overflow-x: hidden;
+        width: 100vw;
+        max-width: 100vw;
+        position: relative;
+        min-height: 100vh;           
+        display: flex;               
+        flex-direction: column;
+}
+
+img, .content-image {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+}
+
+/* Navigation - Mobile First */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 1rem 0;
+}
+
+.nav-container {
+    max-width: 1200px;
+    position: relative;
+    z-index: 100;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+    margin-right: auto;
+}
+
+.nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white !important;
+    flex-direction: column;
+    padding: 1rem 0;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    display: none;
+    list-style: none;
+    z-index: 999;
+}
+
+.nav-menu.active {
+    display: flex;
+}
+
+.nav-menu li {
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    display: block;
+    padding: 0.5rem;
+}
+
+.nav-menu a:hover {
+    color: #666;
+}
+
+.menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #ccc;
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: auto; 
+}
+
+.footer-content p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+ /* Smooth Scrolling */
+ html {
+    scroll-behavior: smooth;
+}
+
+/* Stránka Homepage */
+
+
+/* Hero Section - Mobile First */
+.hero {
+    min-height: 80vh;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    padding: 2rem 0 3rem 0;;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 1rem;
+    position: relative;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+.hero-text {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: black;
+}
+
+.hero .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    letter-spacing: -1px;
+    color: black;
+}
+
+.hero .intro-text {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    color: black;
+    max-width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(51, 51, 51, 0.3);
+}
+
+.btn:hover {
+    background: black;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(51, 51, 51, 0.4);
+}
+
+.hero-image {
+    width: 100% !important;
+    max-width: 400px !important;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 2rem 0 0 0;
+}
+
+/* Content Area - proměnná oblast */
+.content-area {
+    padding: 2rem 0;
+    min-height: auto;
+}
+
+.content-section {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.content-section.active {
+    display: block;
+    opacity: 1;
+}
+
+  /* Main Content */
+  main {
+    padding-top: 0;
+    flex: 1;                    
+    margin-top: 80px;
+}
+
+.section {
+    padding: 3rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Portfolio Section - Hero Style */
+.portfolio-section {
+    min-height: 80vh;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    padding: 4rem 0;
+    border-radius: 30px 30px 0 0;
+}
+
+.portfolio-section .container {
+    width: 100%;
+    max-width: 100%; 
+    padding: 0 1rem;
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.portfolio-section .section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.portfolio-section .content-text {
+    text-align: center;
+    margin-bottom: 0rem;
+}
+
+.portfolio-section .content-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: black;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+.portfolio-section .content-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: black;
+    margin-bottom: 2rem;
+    max-width: 100%;
+}
+
+.portfolio-section .content-image {
+    width: 100% !important;
+    max-width: 400px !important;
+    height: auto;
+    border-radius: 10px;
+    margin: 2rem auto 0 auto;
+    background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 1rem;
+}
+
+/* Design Process Section */
+.process-section {
+    padding: 4rem 0;
+}
+
+.process-section .section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.process-section .content-text {
+    text-align: center;
+}
+
+.process-section .content-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: black;
+    font-weight: 500;
+}
+
+.process-section .content-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: black;
+    margin-bottom: 2rem;
+}
+
+.process-section .content-image {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    background: linear-gradient(135deg, #f0f2f5 0%, #e8ecf0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 1rem;
+}
+
+ /* Featured Project Section */
+ .featured-project-section {
+    padding: 2rem 0;
+}
+
+.featured-project-section .section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.featured-project-section .content-text {
+    text-align: center;
+}
+
+.featured-project-section .content-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: black;
+    font-weight: 600;
+}
+
+.featured-project-section .content-text h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: black;
+    font-weight: 500;
+}
+
+.featured-project-section .content-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: black;
+    margin-bottom: 2rem;
+}
+
+.featured-project-section .content-image {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    background: linear-gradient(135deg, #f0f2f5 0%, #e8ecf0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 1rem;
+    margin: 0 auto !important;
+}
+
+  /* About Section */
+  .about-section {
+    padding: 2rem 0;
+}
+
+.about-section .section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-section .content-text {
+    text-align: center;
+}
+
+.about-section .content-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: black;
+    font-weight: 500;
+}
+
+.about-section .content-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: black;
+    margin-bottom: 2rem;
+}
+
+.about-section .content-image {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    background: linear-gradient(135deg, #f0f2f5 0%, #e8ecf0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 1rem;
+}
+
+ /* Contact Section */
+ .contact-section {
+    padding: 2rem 0;
+    background: black;
+    color: white;
+    text-align: center;
+    border-radius: 50px 50px 0 0;
+}
+
+.contact-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: white;
+    font-weight: 500;
+}
+
+.contact-content p {
+    font-size: 0.9rem;
+    margin-bottom: 3rem;
+    color: #ccc;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-item {
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.contact-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: white;
+    font-weight: 600;
+}
+
+.contact-item a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: white;
+}
+
+/* Stráka Ukázka prací*/
+
+/* Portfolio Hero Section s šedým pozadím */
+.portfolio-hero {
+    background: #f8f9fa;
+    padding: 3rem 0;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.portfolio-hero h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: black;
+    font-weight: 500;
+}
+
+.portfolio-hero p {
+    font-size: 1.1rem;
+    color: black;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Projects Grid - podstránka ukázky prací */
+.projects-section {
+    padding: 1rem 0;
+    background: white;             
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+.project-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    width: 100%;
+    height: 250px;
+    background: #e9ecef;                    
+    border-radius: 15px;                   
+    margin: 1rem;                           
+    width: calc(100% - 2rem);              
+    height: 200px;                         
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;                            
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.project-content {
+    padding: 0 2rem 2rem 0rem;             
+    text-align: left; 
+}
+
+.project-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: black;
+    font-weight: 600;
+}
+
+.project-meta {
+    font-size: 0.9rem;
+    color: black;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.project-card p {
+    color: black;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tag {
+    background: #f0f2f5;
+    color: black;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(51, 51, 51, 0.3);
+}
+
+.btn:hover {
+    background: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(51, 51, 51, 0.4);
+}
