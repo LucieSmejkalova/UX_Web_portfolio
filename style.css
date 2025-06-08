@@ -532,7 +532,7 @@ footer {
 
 /* Projects Grid - podstránka ukázky prací */
 .projects-section {
-    padding: 0rem 0;
+    padding: 1rem 0;
     background: white;
 }
 
@@ -578,15 +578,15 @@ footer {
 }
 
 .project-content {
-    padding: 0 2rem 2rem 2rem;             
+    padding: 0 2rem 2rem 0rem;             
     text-align: left;
+    margin-top: 1.5rem;    
 }
 
 .project-card h3 {
     font-size: 1.4rem;
     margin-bottom: 0.5rem;
-    margin-top: 1.5rem;
-    color: black;
+    color: #333;
     font-weight: 600;
 }
 
