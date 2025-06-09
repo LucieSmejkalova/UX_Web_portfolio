@@ -411,6 +411,7 @@ footer {
     margin: 0 auto;
     display: block;
     padding-bottom: 2rem;
+    padding-top: 2rem;
 }
 
 .featured-project .project-content {
@@ -432,7 +433,7 @@ footer {
 /* About Section */
 .about-section {
     background: #ffffff;
-    padding: 4rem 0;
+    padding: 2rem 0;
     text-align: center;
 }
 
