@@ -410,6 +410,7 @@ footer {
     border-radius: 10px;
     margin: 0 auto;
     display: block;
+    padding-bottom: 2rem;
 }
 
 .featured-project .project-content {
@@ -567,7 +568,7 @@ footer {
 /* Portfolio Hero Section s šedým pozadím */
 .portfolio-hero {
     background: #E6E5EC;
-    padding: 2rem 0 1.5rem 0;
+    padding: 4rem 0 4rem 0;
     text-align: center;
     width: 100%;
   }
@@ -579,7 +580,7 @@ footer {
 
   .portfolio-hero-content h1 {
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 400;
     color: black;
     margin: 0;
     text-align: center;
@@ -685,3 +686,142 @@ footer {
   .project-content .btn:hover {
     background: black;
   }
+
+   /* Můj design proces */
+
+   /* Process Hero Section s šedým pozadím */
+.process-hero {
+    background: #E6E5EC;
+    padding: 4rem 0 4rem 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .process-hero-content {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  
+  .process-hero-content h1 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: black;
+    margin: 0 0 1rem 0;
+    text-align: center;
+    line-height: 1.3;
+  }
+  
+  .process-hero-content p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  /* Process Hero Section s šedým pozadím */
+.process-hero {
+    background: #E6E5EC;
+    padding: 4rem 0 4rem 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .process-hero-content {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  
+  .process-hero-content h1 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: black;
+    margin: 0;
+    text-align: center;
+    line-height: 1.3;
+  }
+  
+  /* Process Section */
+  .process-section {
+    background: #ffffff;
+    padding: 2rem 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .process-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 100%;
+    max-width: 400px;
+    padding: 0 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .process-card {
+    width: 100%;
+    max-width: 380px;
+    background: none;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .process-card .process-image {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+    margin: 0 auto 1.5rem auto;
+    display: block;
+  }
+  
+  .process-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .process-content h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: black;
+    margin: 0 0 1rem 0;
+    line-height: 1.3;
+    text-align: center;
+  }
+  
+  .process-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: black;
+    margin: 0 0 1.5rem 0;
+    text-align: center;
+    width: 100%;
+    max-width: 380px;
+  }
+  
