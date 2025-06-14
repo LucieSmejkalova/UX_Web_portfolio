@@ -140,7 +140,6 @@ footer {
 
 /* Stránka Homepage */
 
-
 /* Hero Section - Mobile First */
 .hero {
     min-height: 80vh;
@@ -168,7 +167,7 @@ footer {
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 0rem;
     margin-top: 4rem;
     font-weight: 700;
