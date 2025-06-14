@@ -18,7 +18,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    margin: 0 0px;                   
+    margin: 0 0 0 0px;                   
 }
 
 img, .content-image {
@@ -121,6 +121,22 @@ footer {
  html {
     scroll-behavior: smooth;
 }
+  /* Main Content */
+  main {
+    padding-top: 0;
+    flex: 1;                    
+    margin-top: 0px;
+}
+
+.section {
+    padding: 0rem 0 0 0;
+}
+
+.container {
+    max-width: none;                   
+    padding: 0;                       
+    overflow-x: hidden;
+}
 
 /* Stránka Homepage */
 
@@ -128,11 +144,11 @@ footer {
 /* Hero Section - Mobile First */
 .hero {
     min-height: 80vh;
-    background: #ffffff;
+    background: #F5F5F7;
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
+    justify-content: left;
+    text-align: left;
     color: black;
     padding: 0rem 0 3rem 0;;
 }
@@ -148,23 +164,25 @@ footer {
 
 .hero-text {
     margin-bottom: 2rem;
-    text-align: center;
+    text-align: left;
 }
 
 .hero h1 {
-    font-size: 4rem;
-    margin-bottom: 0.5rem;
+    font-size: 3rem;
+    margin-bottom: 0rem;
+    margin-top: 4rem;
     font-weight: 700;
     letter-spacing: -1px;
     color: black;
+    line-height: 1.2;
 }
 
 .hero .subtitle {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 1.5rem;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: -1px;
-    color: black;
+    color: #9184D9;
 }
 
 .hero .intro-text {
@@ -227,23 +245,6 @@ footer {
 .content-section.active {
     display: block;
     opacity: 1;
-}
-
-  /* Main Content */
-  main {
-    padding-top: 0;
-    flex: 1;                    
-    margin-top: 80px;
-}
-
-.section {
-    padding: 3rem 0;
-}
-
-.container {
-    max-width: none;                   
-    padding: 0;                       
-    overflow-x: hidden;
 }
 
 /* WHAT I DO SECTION - POUZE MOBILNÍ CSS */
@@ -951,8 +952,8 @@ footer {
 }
 
 .profile-photo {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 15px;
     object-fit: cover;
     object-position: center;
