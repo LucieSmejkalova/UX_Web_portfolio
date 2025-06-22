@@ -21,6 +21,7 @@ body {
     margin: 0 0 0 0px;                   
 }
 
+
 img, .content-image {
     margin-left: auto !important;
     margin-right: auto !important;
@@ -143,7 +144,7 @@ footer {
 /* Hero Section - Mobile First */
 .hero {
     min-height: 80vh;
-    background: #F5F5F7;
+    background: white;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -168,20 +169,20 @@ footer {
 
 .hero h1 {
     font-size: 2.5rem;
-    margin-bottom: 0rem;
     margin-top: 4rem;
-    font-weight: 700;
+    font-weight: 900;
     letter-spacing: -1px;
     color: black;
-    line-height: 1.2;
+    line-height: 1.4;
 }
 
-.hero .subtitle {
+.hero h2 {
     font-size: 2rem;
-    margin-bottom: 1.5rem;
-    font-weight: 600;
+    margin-bottom: 2rem;
+    font-weight: 800;
     letter-spacing: -1px;
-    color: #9184D9;
+    color: #CA88DE;
+    line-height: 1.4;
 }
 
 .hero .intro-text {
@@ -221,129 +222,15 @@ footer {
     height: auto;
     border-radius: 10px;
     display: block;
-    margin: 2rem 0 0 0;
-    padding: 0 1rem;
+    margin: 2rem auto 0 0;  /* top auto bottom left */
+    padding: 0 0rem;
 }
-
-/* Content Area - proměnná oblast */
-.content-area {
-    padding: 2rem 0;
-    min-height: auto;
-}
-
-.content-section {
-    display: none;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    width: 100vw;                        /* Plná šířka viewportu */
-    margin-left: calc(-50vw + 50%);      /* Roztažení vlevo */
-    margin-right: calc(-50vw + 50%);     /* Roztažení vpravo */
-    position: relative;
-}
-
-.content-section.active {
-    display: block;
-    opacity: 1;
-}
-
-/* WHAT I DO SECTION - POUZE MOBILNÍ CSS */
-.my-services-section {
-    background: #ffffff;
-    padding: 0rem 0;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    box-sizing: border-box;
-  }
-
-  .my-services-wrapper {
-    padding: 0 1rem;
-    max-width: 400px;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  /* Header s modrým akcentem */
-  .my-services-label {
-    position: relative;
-    font-size: 1.2rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: #9184D9;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-
-  /* Hlavní nadpis */
-  .my-services-heading {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: 1.5rem;
-    line-height: 1.1;
-    text-align: center;
-  }
-
-  /* Úvodní popis */
-  .my-services-description {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: black;
-    margin: 0 auto 2rem auto;
-    text-align: center;
-    max-width: 380px;
-  }
-
-  /* Services grid */
-  .my-services-grid {
-    width: 100%;
-  }
-
-  /* Service card */
-  .my-service-card {
-    margin-bottom: 2rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid #f0f0f0;
-  }
-
-  .my-service-card:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-  }
-
-  /* Service nadpis */
-  .my-service-title {
-    font-size: 1.3rem;
-    font-weight: 400;
-    color: #000;
-    margin-bottom: 0.8rem;
-    line-height: 1.3;
-    text-align: center;
-  }
-
-  /* Service text */
-  .my-service-text {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: black;
-    text-align: center;
-    max-width: 380px;
-    margin: 0 auto;
-  }
 
 /* Portfolio Section na homepage */
 .portfolio-section {
     background: white;
     padding: 4rem 0;
-    text-align: center;
+    text-align: left;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
@@ -360,7 +247,7 @@ footer {
 }
 
 .portfolio-section .content-text {
-    text-align: center;
+    text-align: left;
 }
 
 .portfolio-section .content-text h2 {
@@ -657,458 +544,140 @@ footer {
     color: white;
 }
 
-/* Stráka Ukázka prací*/
 
-/* Portfolio Hero Section s šedým pozadím */
-.portfolio-hero {
-    background: #E6E5EC;
-    padding: 4rem 0 4rem 0;
-    text-align: center;
-    width: 100%;
-  }
+ /* Design */
 
-  .portfolio-hero-content {
-    width: 100%;
-    padding: 0 1rem;
-  }
-
-  .portfolio-hero-content h1 {
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: black;
-    margin: 0;
-    text-align: center;
-    line-height: 1.3;
-  }
-
-  .projects-section {
-    background: #ffffff;
-    padding: 2rem 0;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .container {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .projects-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-    width: 100%;
-    max-width: 400px;
-    padding: 0 1rem;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-  }
-
-  .project-card {
-    width: 100%;
-    max-width: 380px;
-    background: none;
-    border-radius: 0;
-    padding: 0;
-    box-shadow: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  .project-card .hero-image {
-    width: 100%;
-    max-width: 380px;
-    height: auto;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 12px;
-    margin: 0 auto 1.5rem auto;
-    display: block;
-  }
-
-  .project-content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .project-content h3 {
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: black;
-    margin: 0 0 1rem 0;
-    line-height: 1.3;
-    text-align: center;
-  }
-
-  .project-content p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #666;
-    margin: 0 0 1.5rem 0;
-    text-align: center;
-    width: 100%;
-    max-width: 380px;
-  }
-
-  .project-content .btn {
-    background: black;
-    color: white;
-    padding: 0.6rem 1.2rem;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 500;
-    font-size: 0.9rem;
-    text-align: center;
-    align-self: center;
-    transition: background 0.3s ease;
-  }
-
-  .project-content .btn:hover {
-    background: black;
-  }
-
-   /* Můj design proces */
-
-   /* Process Hero Section s šedým pozadím */
-.process-hero {
-    background: #E6E5EC;
-    padding: 4rem 0 4rem 0;
-    text-align: center;
-    width: 100%;
-  }
-  
-  .process-hero-content {
-    width: 100%;
-    padding: 0 1rem;
-  }
-  
-  .process-hero-content h1 {
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: black;
-    margin: 0 0 1rem 0;
-    text-align: center;
-    line-height: 1.3;
-  }
-  
-  .process-hero-content p {
-    font-size: 1rem;
-    color: #666;
-    margin: 0;
-    text-align: center;
-    line-height: 1.5;
-  }
-  
-  /* Process Hero Section s šedým pozadím */
-.process-hero {
-    background: #E6E5EC;
-    padding: 4rem 0 4rem 0;
-    text-align: center;
-    width: 100%;
-  }
-  
-  .process-hero-content {
-    width: 100%;
-    padding: 0 1rem;
-  }
-  
-  .process-hero-content h1 {
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: black;
-    margin: 0;
-    text-align: center;
-    line-height: 1.3;
-  }
-  
-  /* Process Section */
-  .process-section {
-    background: #ffffff;
-    padding: 2rem 0;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .container {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .process-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-    width: 100%;
-    max-width: 400px;
-    padding: 0 1rem;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-  }
-  
-  .process-card {
-    width: 100%;
-    max-width: 380px;
-    background: none;
-    border-radius: 0;
-    padding: 0;
-    box-shadow: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 0 auto;
-  }
-  
-  .process-card .process-image {
-    width: 100%;
-    max-width: 380px;
-    height: auto;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 12px;
-    margin: 0 auto 1.5rem auto;
-    display: block;
-  }
-  
-  .process-content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .process-content h3 {
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: black;
-    margin: 0 0 1rem 0;
-    line-height: 1.3;
-    text-align: center;
-  }
-  
-  .process-content p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: black;
-    margin: 0 0 1.5rem 0;
-    text-align: center;
-    width: 100%;
-    max-width: 380px;
-  }
-  
-    /* Sekce o mně */
-
-    /* Hero Section */
-.about-hero {
-    background: #E6E5EC;
-    padding: 2rem 0 0rem 0;
-    text-align: center;
-    width: 100%;
-}
-
-.about-hero-content {
-    width: 100%;
-    padding: 0 1rem;
-}
-
-.about-hero-content h1 {
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: black;
-    margin: 0;
-    text-align: center;
-    line-height: 1.3;
-}
-
-/* Profile Photo */
-.profile-photo-container {
-    margin: 1rem 0;
-    display: flex;
-    justify-content: center;
-}
-
-.profile-photo {
-    width: 300px;
-    height: 300px;
-    border-radius: 15px;
-    object-fit: cover;
-    object-position: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-      /* Hero Section */
-      .about-hero {
-        background: #E6E5EC;
-        padding: 4rem 0 4rem 0;
-        text-align: center;
-        width: 100%;
-    }
-
-    .about-hero-content {
-        width: 100%;
-        padding: 0 1rem;
-    }
-
-    .about-hero-content h1 {
-        font-size: 1.6rem;
-        font-weight: 400;
-        color: black;
-        margin: 0;
-        text-align: center;
-        line-height: 1.3;
-    }
-
-    /* Main Content Sections */
-    .about-section {
-        background: #ffffff;
-        padding: 0.5rem 0 !important;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .about-container {
-        padding: 0 0rem;
-        max-width: 280px;
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    /* Section with purple tag */
-    .section-label {
-        font-size: 0.8rem;
-        font-weight: 600;
-        letter-spacing: 1px;
-        color: #9184D9;
-        text-transform: uppercase;
-        margin-bottom: 1rem;
-        text-align: center;
-    }
-
-    .section-title {
-        font-size: 1.4rem;
-        font-weight: 600;
-        color: black;
-        margin-bottom: 1.5rem;
-        line-height: 1.3;
-        text-align: center;
-    }
-
-    /* Profile Photo Section */
-    .profile-section {
-        margin-bottom: 1.5rem;
-    }
-
-    .profile-photo {
-        width: 200px;
-        height: 200px;
-        border-radius: 15px;
-        margin: 0 auto 1rem auto;
-        display: block;
-        object-fit: cover;
-        background: #f0f0f0;
-    }
-
-    .quote-box {
-        background: #9184D9;
-        color: white;
-        padding: 1rem;
-        border-radius: 8px;
-        margin: 1rem 0;
-        font-style: italic;
-        font-size: 0.9rem;
-        line-height: 1.4;
-    }
-
-    .profile-subtitle {
-        font-size: 1rem;
-        color: black;
-        line-height: 1.5;
-        margin-top: 1rem;
-    }
-
-    /* Content sections */
-    .content-text {
-        font-size: 0.9rem;
-        line-height: 1.6;
-        color: black;
-        text-align: center;
-        margin-bottom: 1.5rem;
-    }
-
-    /* Skills section */
-    .skills-grid {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-        margin: 1.5rem 0;
-    }
-
-    .skill-category {
-        text-align: center;
-    }
-
-    .skill-category h4 {
-        font-size: 1rem;
-        font-weight: 600;
-        color: black;
-        margin-bottom: 0.5rem;
-    }
-
-    .skill-category p {
-        font-size: 0.85rem;
-        color: #666;
-        line-height: 1.5;
-    }
-
-    /* Education items */
-    .education-item {
-        margin-bottom: 1.5rem;
-        padding-bottom: 1rem;
-        border-bottom: 1px solid #f0f0f0;
-    }
-
-    .education-item:last-child {
-        border-bottom: none;
-        margin-bottom: 0;
-    }
-
-    .education-item h4 {
-        font-size: 1rem;
-        font-weight: 600;
-        color: black;
-        margin-bottom: 0.5rem;
-        text-align: center;
-    }
-
-    .education-item p {
-        font-size: 0.85rem;
-        color: #666;
-        line-height: 1.5;
-        text-align: center;
-    }
+        .container {
+            max-width: 320px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        
+        /* Main Content */
+        .main {
+            padding: 32px 0;
+        }
+        
+        .page-header {
+            margin-bottom: 40px;
+        }
+        
+        .page-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #1a1a1a;
+        }
+        
+        .page-description {
+            font-size: 14px;
+            color: black;
+            line-height: 1.5;
+        }
+        
+        /* Articles Grid */
+        .articles-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        
+        .article-card {
+            background: #ffffff;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            border-color: #d1d1d1;
+        }
+        
+        .article-image {
+            width: 100%;
+            height: 160px;
+            background: black;
+            border-radius: 12px 12px 12px 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 14px;
+            font-weight: 500;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .article-content {
+            padding: 20px 0 20px 0;
+        }
+        
+        .article-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        
+        .article-description {
+            font-size: 14px;
+            color: black;
+            line-height: 1.5;
+            margin-bottom: 16px;
+        }
+        
+        .read-more-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 16px;
+            background-color: #1a1a1a;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        
+        .read-more-btn:hover {
+            background-color: black;
+            transform: translateX(2px);
+        }
+        
+        .read-more-btn::after {
+            content: '→';
+            transition: transform 0.2s ease;
+        }
+        
+        .read-more-btn:hover::after {
+            transform: translateX(2px);
+        }
+        
+        /* Footer */
+        .footer {
+            margin-top: 64px;
+            padding: 32px 0;
+            border-top: 1px solid #e5e5e5;
+            text-align: center;
+        }
+        
+        .footer-text {
+            font-size: 14px;
+            color: #888;
+        }
+        
+        /* Structured Data for SEO */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
