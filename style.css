@@ -150,13 +150,13 @@ footer {
     justify-content: left;
     text-align: left;
     color: black;
-    padding: 0rem 0 3rem 0;;
+    padding: 0 0rem 2rem 0rem;
 }
 
 .hero-content {
     width: 100%;
     max-width: 100%;
-    padding: 0 1rem;
+    padding: 0 0rem;
     position: relative;
     overflow-x: hidden;
     z-index: 1;
