@@ -11,129 +11,164 @@
 </head>
 <body>
 
-  <!-- Main Content - Proměnná oblast -->
-  <main class="main-content">
+<!-- Hero Section -->
+<section class="hero" id="home">
     <div class="container">
-        <div class="content-area" id="content-area">
-            <!-- HOMEPAGE OBSAH -->
-            <div id="home-section" class="content-section active">
-                <!-- Hero Section -->
-                <section class="hero">
-                    <div class="hero-content">
-                        <div class="hero-text">
-                            <h1>Lucie Smejkalová</h1>
-                            <h2>Blog ze světa UX/UI designu.</h2>
-                            <p class="intro-text">
-                                Vítám vás 👋. Jmenuji se Lucie a jsem UX/UI designérka. Na tomto blogu sdílím své poznatky a zkušenosti ze světa designu. Ať už s designem začínáte, podnikáte, nebo vás jen zajímá, jak fungují digitální produkty okolo vás, bude mi potěšením, když se tu inspirujete, něco nového se naučíte nebo najdete odpověď na svou otázku.</p>
-                            <a onclick="showSection('')" class="btn">Prozkoumat blog</a>
-                        </div>
-                        <img src="Img/Frame 2424564.png" alt="foto úvodní banner" class="hero-image">
-                    </div>
-                </section>
+        <div class="hero-content fade-in">
+            <div class="hero-text">
+                <h1>Lucie Smejkalová</h1>
+                <h2>Blog ze světa UX/UI designu.</h2>
+                <p>Vítám vás 👋. Jmenuji se Lucie a jsem UX/UI designérka. Na tomto blogu sdílím své poznatky a zkušenosti ze světa designu. Ať už s designem začínáte, podnikáte, nebo vás jen zajímá, jak fungují digitální produkty okolo vás, bude mi potěšením, když se tu inspirujete, něco nového se naučíte nebo najdete odpověď na svou otázku.</p>
+                <a href="#articles" class="cta-button">Prozkoumat blog</a>
+            </div>
+            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b1e5?w=400&h=400&fit=crop&crop=face" alt="Lucie Smejkalová" class="hero-image">
+        </div>
+    </div>
+</section>
 
-                <!-- Portfolio Section -->
-                <section class="portfolio-section">
-                    <div class="section-content">
-                        <div class="content-text">
-                            <h2>UKÁZKY PRACÍ</h2>
-                            <h3>Podívejte na ukázky mé práce</h3>
-                        </div>
-                        <img src="Img/Frame 2424564.png" alt="foto úvodní banner" class="hero-image">
-                        <p>Prohlédněte si výběr mých nejlepších projektů, kde řeším skutečné UX výzvy.</p>
-                        <a onclick="showSection('portfolio')" class="btn">Zobrazit ukázky prací</a>
-                    </div>
-                </section>
-
-                <!-- Design Process Section -->
-                <section class="process-section">
-                    <div class="section-content">
-                        <div class="content-text">
-                            <h2>Jak pracuji</h2>
-                            <h3>Podívejte se jak probíhá můj proces designování projektů</h3>
-                        </div>
-                        <img src="Img/Frame 2424564.png" alt="foto úvodní banner" class="hero-image">
-                        <p>Strukturovaný přístup od prvotního výzkumu až po finální implementaci.</p>
-                        <a onclick="showSection('process')" class="btn">Zobrazit více</a>
-                    </div>
-                </section>
-
-                <!-- Featured Projects Section -->
-                <section class="featured-projects-section">
-                    <div class="featured-projects-header">
-                        <h3>Tvořím UX design, který přináší výsledky</h3>
-                    </div>
-                    
-                    <div class="featured-projects-grid">
-                        <!-- Featured Project 1 -->
-                        <div class="featured-project-section">
-                            <img src="Img/Img projekt 1.png" alt="foto projekt 1" class="project-image">
-                            <div class="featured-projects-grid">
-                                <h4>Redesign e-commerce aplikace pro módní retailer</h4>
-                                <p>Uživatelé opouštěli nákupní proces kvůli složité navigaci a nejasným informacím o produktech.</p>
-                                <a href="/projekt-1" class="btn">Zobrazit případovou studii</a>
-                            </div>
-                        </div>
-                        
-                        <!-- Featured Project 2 -->
-                        <div class="featured-project-section">
-                            <img src="Img/Img projekt 1.png" alt="foto projekt 2" class="project-image">
-                            <div class="featured-projects-grid">
-                                <h4>Dashboard pro bankovní aplikaci</h4>
-                                <p>Návrh intuitivního rozhraní pro správu financí s důrazem na přehlednost a bezpečnost.</p>
-                                <a href="/projekt-2" class="btn">Zobrazit případovou studii</a>
-                            </div>
-                        </div>
-                        
-                        <!-- Featured Project 3 -->
-                        <div class="featured-project-section">
-                            <img src="Img/Img projekt 1.png" alt="foto projekt 3" class="project-image">
-                            <div class="featured-projects-grid">
-                                <h4>Zdravotnická platforma pro telemedicínu</h4>
-                                <p>Komplexní UX řešení s důrazem na dostupnost a snadné ovládání pro starší uživatele.</p>
-                                <a href="/projekt-3" class="btn">Zobrazit případovou studii</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- About Section -->
-                <section class="about-section">
-                    <div class="section-content">
-                        <div class="content-text">
-                            <h2>O mně</h2>
-                            <h3>Zkušenosti, které mě formovaly můj přístup k designu</h3>
-                        </div>
-                        <img src="Img/Foto about.png" alt="foto úvodní banner" class="hero-image">
-                        <p>UX designerka s více než 5 lety zkušeností v oblasti digitálního designu.</p>
-                        <a onclick="showSection('contact')" class="btn">Více o mně</a>
-                    </div>
-                </section>
-
-                <!-- Contact Section -->
-                <section class="contact-section">
-                    <div class="contact-content">
-                        <h2>Kontakt</h2>
-                        <p>Zajímá vás spolupráce? Ráda si s vámi promluvím o vašem projektu.</p>
-                        
-                        <div class="contact-info">
-                            <div class="contact-item">
-                                <h3>Email</h3>
-                                <a href="mailto:lucie.smejkalova@email.cz">lucie.smejkalova@email.cz</a>
-                            </div>
-                            <div class="contact-item">
-                                <h3>Telefon</h3>
-                                <a href="tel:+420123456789">+420 123 456 789</a>
-                            </div>
-                            <div class="contact-item">
-                                <h3>LinkedIn</h3>
-                                <a href="https://linkedin.com/in/lucie-smejkalova" target="_blank">linkedin.com/in/lucie-smejkalova</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+<!-- Latest Article -->
+<section class="latest-article" id="articles">
+    <div class="container">
+        <h2 class="section-title fade-in">Nejnovější článek</h2>
+        <div class="article-card fade-in">
+            <div class="article-content">
+                <div class="article-meta">Před 3 dny • 5 min čtení</div>
+                <h3 class="article-title">Co je to UX design? Kompletní průvodce pro začátečníky</h3>
+                <p class="article-excerpt">UX design je systematický proces navrhování digitálních produktů s ohledem na potřeby uživatelů. Zatímco UX je samotná zkušenost, UX design je způsob, jak tuto zkušenost vytvořit. Vysvětlíme si, co UX design obnáší, jak funguje jeho proces a proč je nezbytný pro vytváření úspěšných digitálních produktů.</p>
+                <a href="#" class="read-more">Číst celý článek →</a>
             </div>
         </div>
     </div>
-</main>
+</section>
+
+<!-- Use Cases -->
+<section class="use-cases">
+    <div class="container">
+        <h2 class="section-title fade-in">Pro koho je tento blog?</h2>
+        <div class="use-cases-grid">
+            <div class="use-case-card fade-in">
+                <div class="use-case-icon">🎨</div>
+                <h3 class="use-case-title">Začínající designéři</h3>
+                <p class="use-case-desc">Naučte se základy UX/UI designu, poznejte nástroje a metody, které vám pomohou začít kariéru v designu.</p>
+            </div>
+            <div class="use-case-card fade-in">
+                <div class="use-case-icon">💼</div>
+                <h3 class="use-case-title">Podnikatelé</h3>
+                <p class="use-case-desc">Pochopte, proč je dobrý UX klíčový pro váš byznys a jak investice do designu ovlivní vaše výsledky.</p>
+            </div>
+            <div class="use-case-card fade-in">
+                <div class="use-case-icon">🔍</div>
+                <h3 class="use-case-title">Zvědaví lidé</h3>
+                <p class="use-case-desc">Zajímá vás, jak fungují aplikace a weby okolo vás? Objevte principy, které ovlivňují váš digitální svět.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+    <div class="container">
+        <div class="about-content fade-in">
+            <div class="about-text">
+                <h2>O mně</h2>
+                <p>Jsem UX/UI designérka s vášní pro vytváření digitálních produktů, které skutečně slouží lidem. Věřím, že dobrý design není jen o tom, jak něco vypadá, ale hlavně o tom, jak to funguje.</p>
+                <p>Na tomto blogu sdílím své zkušenosti, tipy a postupy, které jsem se naučila během své cesty designem. Mým cílem je udělat UX design srozumitelným a dostupným pro každého.</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b1e5?w=200&h=200&fit=crop&crop=face" alt="Lucie Smejkalová" class="about-image">
+        </div>
+    </div>
+</section>
+
+<!-- Popular Articles -->
+<section class="popular-articles">
+    <div class="container">
+        <h2 class="section-title fade-in">Oblíbené články</h2>
+        <div class="articles-grid">
+            <div class="popular-card fade-in">
+                <div class="popular-card-content">
+                    <h3>Základy UX: Co byste měli vědět o uživatelské zkušenosti</h3>
+                    <p>Kompletní úvod do světa UX pro úplné začátečníky. Dozvíte se, co UX znamená a proč je důležité.</p>
+                </div>
+            </div>
+            <div class="popular-card fade-in">
+                <div class="popular-card-content">
+                    <h3>UX vs. UI: Jaký je mezi nimi rozdíl?</h3>
+                    <p>Vysvětlení nejčastější záměny v designu pomocí praktických příkladů.</p>
+                </div>
+            </div>
+            <div class="popular-card fade-in">
+                <div class="popular-card-content">
+                    <h3>Co dělá UX designér? Průvodce profesí budoucnosti</h3>
+                    <p>Podrobný pohled na práci UX designéra, jeho každodenní úkoly a potřebné dovednosti.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer" id="contact">
+    <div class="container">
+        <div class="footer-content fade-in">
+            <h3>Zůstaňme v kontaktu</h3>
+            <p>Máte otázku nebo nápad na článek? Napište mi!</p>
+            <div class="social-links">
+                <a href="#" class="social-link">📧</a>
+                <a href="#" class="social-link">💼</a>
+                <a href="#" class="social-link">🐦</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Lucie Smejkalová. Všechna práva vyhrazena.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // Intersection Observer for animations
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-in').forEach(el => {
+        observer.observe(el);
+    });
+
+    // Header scroll effect
+    window.addEventListener('scroll', () => {
+        const header = document.querySelector('.header');
+        if (window.scrollY > 100) {
+            header.style.background = 'rgba(255, 255, 255, 0.98)';
+            header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+        } else {
+            header.style.background = 'rgba(255, 255, 255, 0.95)';
+            header.style.boxShadow = 'none';
+        }
+    });
+</script>
 </body>
 </html>
